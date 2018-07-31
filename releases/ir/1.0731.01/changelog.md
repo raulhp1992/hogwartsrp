@@ -1,0 +1,36 @@
+- [Added] Room identification addon (WorldEdit)
+- [Added] New ULX Category -> World Edit
+- [Added] New ULX Category -> HRP Tools
+- [Added] New chat commands: !warp <areaname> | !summon <playername> | !allow <playername> | !disallow <playername> | !allowed
+- [Added] Quidditch functionality so players cannot go outside Quidditch area (has 10 seconds to return)
+- [Added] ASay for staff now can be used with either @ or /asay in chat
+- [Added] Staff confirmation boxes now return the selected option from the player
+- [Added] HRP Tools -> Ability to view all brooms spawned on the map (owner and position) + ability to clean all brooms on map.
+- [Added] New Infobars to display text notifications
+- [Added] Class blackboard system which displays current class, professor, if dismissed, etc. Updates when all classes update or when professor assigned.
+- [Improvement] Mystery boxes now don't disappear if a player is near/opening one
+- [Improvement] Staff sit area can now not be entered by players and ghost. Will warp them out
+- [Improvement] VIP area replaced with 'WorldEdit', no longer kills restricted players; now teleports them to the ground level.
+- [Improvement] rCore ulx commands re-wrote and given ability to run in server or through server console. Plus added data verification checks for each parameter
+- [Improvement] Spell resecuto re-written for optimization
+- [Improvement] Spell resecuto now requires the caster to have at least 25hp to successfully cast
+- [Improvement] Spell resecuto will now only res ONE player per cast
+- [Improvement] Spell resecuto now gives 50% of the health from the caster to the revived player
+- [Improvement] Death ghost animations update
+- [Improvement] Tombstones visuals modified, added no quotes from harry potter
+- [Improvement] Optimized weapon_hpwr_stick.lua
+- [Improvement] Certain 'speciality spells' are now restricted and cannot be given out / assigned. This is to keep certain spells unique and restricted to their assigned activites.
+- [Improvement] [Admin] Unlearning a spell from everyone now also revokes the players who have it as a learnable but havent learned it yet
+- [Bug] Fixed spell cheering charm -> attempt to call method 'SteamID64' (a nil value)
+- [Bug] Fixed core error -> attempt to get length of global 'tpGrid' (a nil value)
+- [Bug] Fixed UI scaling issue on -> events, notifications, confirmation boxes
+- [Bug] Fixed spell Resecuto could be glitched to allow 0hp on the healing player with unlimited resses
+- [Bug] Fixed spell lovecharm.lua:99 -> NULL entity
+- [Bug] Fixed prop_resizedragdoll_physparent.lua:908 -> NULL entity
+- [Bug] Fixed cl_notifications.lua:72 -> NULL entity
+- [Bug] Fixed eff_ghost.lua:19: bad argument #1 to 'GetBonePosition' (number expected, got no value)
+- [Bug] Fixed issue with Quidditch not validating entities on cleanup
+- [Bug] Fixed cl_hud.lua:221: attempt to perform arithmetic on local '_plyXP' (a nil value)
+- [Bug] Fixed spell autocasting when switching spells
+- [Bug] Fixed weapon_hpwr_stick.lua:1270: attempt to call method 'ResetBonePositions' (a nil value)
+- [Removed] Simple Area Addon
